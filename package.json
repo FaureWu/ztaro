@@ -27,7 +27,7 @@
 	"author": "FaureWu <502556093@qq.com>",
 	"license": "MIT",
 	"dependencies": {
-		"@opcjs/zoro": "^2.2.1",
+		"@opcjs/zoro": "^2.2.2",
 		"@opcjs/zoro-plugin": "^2.1.0",
 		"@tarojs/async-await": "1.1.4",
 		"@tarojs/components": "1.1.4",
