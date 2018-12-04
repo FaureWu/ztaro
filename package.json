@@ -69,7 +69,7 @@
 		"eslint-plugin-taro": "1.1.4",
 		"express": "^4.16.4",
 		"faker": "^4.1.0",
-		"gulp": "^3.9.1",
+		"gulp": "^4.0.0",
 		"gulp-alioss-upload": "^1.0.2",
 		"morgan": "^1.9.1",
 		"node-dev": "^3.1.3",
