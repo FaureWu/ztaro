@@ -66,6 +66,13 @@ const config = {
         autoprefixer: {
           enable: true,
         },
+        cssModules: {
+          enable: true,
+          config: {
+            namingPattern: 'global',
+            generateScopedName: '[name]__[local]___[hash:base64:5]'
+          },
+        },
       },
       url: {
         enable: true,
@@ -92,6 +99,13 @@ const config = {
       postcss: {
         autoprefixer: {
           enable: true,
+        },
+        cssModules: {
+          enable: true,
+          config: {
+            namingPattern: 'global',
+            generateScopedName: '[name]__[local]___[hash:base64:5]'
+          },
         },
       },
     },

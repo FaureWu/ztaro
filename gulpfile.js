@@ -9,18 +9,15 @@ const ossOptions = {
   formats: appConfig.oss.formats,
 }
 
-const watchFiles = [
-  './dist/**/*.js',
-  './dist/**/*.json',
-  './dist/**/*.wxss',
-  './dist/**/*.wxml',
-]
 
 function uploadOss() {
   return gulp
-    .src(watchFiles, {
-      since: gulp.lastRun(uploadOss),
-    })
+    .src([
+      './dist/**/*.js',
+      './dist/**/*.json',
+      './dist/**/*.wxss',
+      './dist/**/*.wxml',
+    ], { since: gulp.lastRun(uploadOss) })
     .pipe(oss(ossOptions))
     .pipe(gulp.dest('./dist/'))
 }
@@ -28,7 +25,12 @@ function uploadOss() {
 gulp.task('upload:oss', uploadOss)
 gulp.task('watch', function() {
   return gulp.watch(
-    watchFiles,
+    [
+      './dist/**/*.js',
+      './dist/**/*.json',
+      './dist/**/*.wxss',
+      './dist/**/*.wxml',
+    ],
     { delay: 1000, ignoreInitial: false },
     uploadOss,
   )

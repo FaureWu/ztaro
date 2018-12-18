@@ -5,7 +5,7 @@ import { dispatcher } from '@opcjs/zoro'
 
 import ComponentSpin from '../../components/spin/spin'
 
-import './todos.scss'
+import styles from './todos.scss'
 
 @connect(({ todos }) => ({
   todos: todos.lists,
@@ -76,31 +76,31 @@ class PageTodos extends Component {
     const { value, loading } = this.state
 
     return (
-      <View className="todos">
+      <View className={styles.todos}>
         <ComponentSpin loading={loading} />
-        <View className="logo" />
+        <View className={styles.logo} />
         <Input
-          className="input"
+          className={styles.input}
           value={value}
           placeholder="输入添加的待办事件"
           onInput={this.handleInput}
         />
-        <View className="tools">
-          <Button className="tool" onClick={this.handleAdd}>
+        <View className={styles.tools}>
+          <Button className={styles.tool} onClick={this.handleAdd}>
             添加
           </Button>
-          <Button className="tool" onClick={this.handleHttpStatusError}>
+          <Button className={styles.tool} onClick={this.handleHttpStatusError}>
             演示http服务错误
           </Button>
-          <Button className="tool" onClick={this.handleServiceError}>
+          <Button className={styles.tool} onClick={this.handleServiceError}>
             演示业务错误
           </Button>
         </View>
         {todos.map(todo => (
-          <View className="todo" key={todo.id}>
+          <View className={styles.todo} key={todo.id}>
             <Text>{todo.text}</Text>
             <View onClick={this.handleDelete.bind(this, todo.id)}>
-              <Icon type="cancel" class="delete" />
+              <Icon type="cancel" className={styles.delete} />
             </View>
           </View>
         ))}

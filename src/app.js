@@ -7,7 +7,7 @@ import PageTodos from './pages/todos/todos'
 import models from './models'
 import mixins from './mixins'
 
-import './app.scss'
+import './app.global.scss'
 
 const app = zoro({
   onError(error) {
