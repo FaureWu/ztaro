@@ -7,8 +7,9 @@ import ComponentSpin from '../../components/spin/spin'
 
 import styles from './todos.scss'
 
-@connect(({ todos }) => ({
+@connect(({ todos, loading }) => ({
   todos: todos.lists,
+  loading: loading.effect['todos/getTodos'],
 }))
 class PageTodos extends Component {
   config = {
@@ -17,20 +18,11 @@ class PageTodos extends Component {
 
   state = {
     value: '',
-    loading: false,
   }
 
   componentWillMount() {
-    this.showLoading()
-    dispatcher.todos
-      .getTodos()
-      .then(this.hideLoading)
-      .catch(this.hideLoading)
+    dispatcher.todos.getTodos()
   }
-
-  showLoading = () => this.setState({ loading: true })
-
-  hideLoading = () => this.setState({ loading: false })
 
   handleInput = ({ detail: { value } }) => {
     this.setState({ value })
@@ -48,6 +40,7 @@ class PageTodos extends Component {
     }
 
     dispatcher.todos.addTodo({ text: value }).then(() => {
+      this.refreshTodos()
       this.setState({ value: '' })
       Taro.showToast({
         icon: 'none',
@@ -59,6 +52,7 @@ class PageTodos extends Component {
 
   handleDelete = id => {
     dispatcher.todos.deleteTodo({ id }).then(() => {
+      this.refreshTodos()
       Taro.showToast({
         icon: 'none',
         title: '删除成功',
@@ -71,9 +65,13 @@ class PageTodos extends Component {
 
   handleServiceError = () => dispatcher.todos.serviceError()
 
+  refreshTodos() {
+    dispatcher.todos.getTodos(undefined, { disableLoading: true })
+  }
+
   render() {
-    const { todos } = this.props
-    const { value, loading } = this.state
+    const { todos, loading } = this.props
+    const { value } = this.state
 
     return (
       <View className={styles.todos}>

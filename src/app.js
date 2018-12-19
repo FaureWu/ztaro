@@ -2,6 +2,7 @@ import Taro, { Component } from '@tarojs/taro'
 import '@tarojs/async-await'
 import { Provider } from '@tarojs/redux'
 import zoro from '@opcjs/zoro'
+import { createLoading } from '@opcjs/zoro-plugin'
 
 import PageTodos from './pages/todos/todos'
 import models from './models'
@@ -21,6 +22,7 @@ const app = zoro({
   },
 })
 app.use(mixins)
+app.use(createLoading())
 app.model(models)
 
 const store = app.start(false)

@@ -28,7 +28,7 @@
 	"license": "MIT",
 	"dependencies": {
 		"@opcjs/zoro": "^2.2.2",
-		"@opcjs/zoro-plugin": "^2.1.0",
+		"@opcjs/zoro-plugin": "^2.1.1",
 		"@tarojs/async-await": "^1.2.0",
 		"@tarojs/components": "^1.2.0",
 		"@tarojs/redux": "^1.2.0",

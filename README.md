@@ -215,8 +215,8 @@ request({
 
 ## 数据处理框架zoro
 
-* 默认引入了mixins插件，用于扩展model，[mixins插件](https://github.com/FaureWu/zoro-plugin/blob/master/doc/MIXINS_PLUGIN.md)
-* 未引入loading插件，如需请自行引入，引入方式[全局loading插件](https://github.com/FaureWu/zoro-plugin/blob/master/doc/LOADING_PLUGIN.md)
+* 默认引入mixins插件，用于扩展model，[mixins插件](https://github.com/FaureWu/zoro-plugin/blob/master/doc/MIXINS_PLUGIN.md)
+* 默认引入loading状态管理插件，[loading插件](https://github.com/FaureWu/zoro-plugin/blob/master/doc/LOADING_PLUGIN.md)
 
 zoro框架的使用这里不在描述，自行查看文档[zoro](https://github.com/FaureWu/zoro)
 

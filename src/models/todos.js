@@ -18,24 +18,12 @@ export default {
       put({ type: 'update', payload: { lists: data } })
     },
 
-    async addTodo(
-      {
-        payload: { text },
-      },
-      { put },
-    ) {
+    async addTodo({ payload: { text } }) {
       await addTodo({ text })
-      await put({ type: 'getTodos' })
     },
 
-    async deleteTodo(
-      {
-        payload: { id },
-      },
-      { put },
-    ) {
+    async deleteTodo({ payload: { id } }) {
       await deleteTodo({ id })
-      await put({ type: 'getTodos' })
     },
 
     async httpStatusError() {

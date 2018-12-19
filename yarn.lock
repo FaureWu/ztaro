@@ -175,10 +175,10 @@
     lodash "^4.17.10"
     to-fast-properties "^2.0.0"
 
-"@opcjs/zoro-plugin@^2.1.0":
-  version "2.1.0"
-  resolved "https://registry.yarnpkg.com/@opcjs/zoro-plugin/-/zoro-plugin-2.1.0.tgz#266b5abd967397971ccf9e937286a673589c28d3"
-  integrity sha512-u5nVkoNBmQQtpD7ewAdqg5Azq/XT1nKEMFYMjNlMmuxqsB9P/5LIK9UAf+M4kaoX+Ly9Rfo1xajQrgYrOKVWmQ==
+"@opcjs/zoro-plugin@^2.1.1":
+  version "2.1.1"
+  resolved "https://registry.yarnpkg.com/@opcjs/zoro-plugin/-/zoro-plugin-2.1.1.tgz#82a36d385232c1cba8d4d825e165e9de0241f429"
+  integrity sha512-iWizsmX3CmvDEG2fzqzswYpG/V1dsXrja/tUxrf2rzqxiHBuLng1E7m1WL+l9EqjH1dOU9rvmLz3fou2cizgiQ==
 
 "@opcjs/zoro@^2.2.2":
   version "2.2.2"
