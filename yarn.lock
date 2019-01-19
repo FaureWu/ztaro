@@ -175,15 +175,15 @@
     lodash "^4.17.10"
     to-fast-properties "^2.0.0"
 
-"@opcjs/zoro-plugin@^2.1.1":
-  version "2.1.1"
-  resolved "https://registry.yarnpkg.com/@opcjs/zoro-plugin/-/zoro-plugin-2.1.1.tgz#82a36d385232c1cba8d4d825e165e9de0241f429"
-  integrity sha512-iWizsmX3CmvDEG2fzqzswYpG/V1dsXrja/tUxrf2rzqxiHBuLng1E7m1WL+l9EqjH1dOU9rvmLz3fou2cizgiQ==
+"@opcjs/zoro-plugin@^2.2.0":
+  version "2.2.0"
+  resolved "https://registry.yarnpkg.com/@opcjs/zoro-plugin/-/zoro-plugin-2.2.0.tgz#047e348b1e6932f06036153f836f33827cf56413"
+  integrity sha512-8M5BBoF0qs2wmFnaeHfDvig7atiySuRW/3oKg2UC5X+f5VcTMm2GC+TsQKZ3NsxKFWVDKhZZ51LGFWdv4c/hCw==
 
-"@opcjs/zoro@^2.3.0":
-  version "2.3.0"
-  resolved "https://registry.yarnpkg.com/@opcjs/zoro/-/zoro-2.3.0.tgz#9d5602ba54c7b2e37601ed0ddbd7494391a1fc68"
-  integrity sha512-+BxFqVYLnnUSL+23amVJeAMdHuDXlr39r8VvF56zZwa/m3he8UHiBkMNhP4DlBMxN2AsSwMbySRas0SNL15LlA==
+"@opcjs/zoro@^2.3.1":
+  version "2.3.1"
+  resolved "https://registry.yarnpkg.com/@opcjs/zoro/-/zoro-2.3.1.tgz#225505e6c75bf98af9566003accca582bd4be23a"
+  integrity sha512-xNRgkk8WZ2Ug8CxWdNjnuzRI6UKaQB+SMcLH+9HNlmJaUpNTSk9T10qNDOMehe7/13Fg/5wARJkYnYudMYxKtg==
   dependencies:
     redux "^4.0.0"
     regenerator-runtime "^0.12.1"
