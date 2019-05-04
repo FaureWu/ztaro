@@ -911,10 +911,10 @@ ali-oss@^6.0.1:
     utility "^1.8.0"
     xml2js "^0.4.16"
 
-alioss-upload-loader@^1.0.1:
-  version "1.0.1"
-  resolved "https://registry.yarnpkg.com/alioss-upload-loader/-/alioss-upload-loader-1.0.1.tgz#f08b5d3fbe4435f143b4edf9e6fbc87d8cfdf072"
-  integrity sha512-YkTnsjUXUkEEzZw4SI38bp1ZdfaHBdEkFIlfnBIP7pXz0SvSBabGYLYYukYipIV6rkNaYj/FPeOdCeNe3YjIpA==
+alioss-upload-loader@^1.0.2:
+  version "1.0.2"
+  resolved "https://registry.yarnpkg.com/alioss-upload-loader/-/alioss-upload-loader-1.0.2.tgz#836b0da8f0f8405a95a0e02247c67b27168e6010"
+  integrity sha512-TJ5mJdNxbqpV/8kxZ0awPxPtVAFs/4mkRUD4zxXUc4kSUuZO2TQChN+INDWfp+5nHKNJBl7xuXnjT4RDjmYjWw==
   dependencies:
     ali-oss "^6.0.1"
     ansi-colors "^3.2.1"
@@ -5106,10 +5106,10 @@ growly@^1.2.0:
   resolved "https://registry.yarnpkg.com/growly/-/growly-1.3.0.tgz#f10748cbe76af964b7c96c93c6bcc28af120c081"
   integrity sha1-8QdIy+dq+WS3yWyTxrzCivEgwIE=
 
-gulp-alioss-upload@^1.0.2:
-  version "1.0.2"
-  resolved "https://registry.yarnpkg.com/gulp-alioss-upload/-/gulp-alioss-upload-1.0.2.tgz#711af76f934a3ff7c8356589f6d077d3cd582ae5"
-  integrity sha512-EYnq9opBSMPBKIQ0GlrqJ6UWx2W1mYVr6Fv9w4sZl887/GBvLmIzA8bw/ayqWNnm0FOF9383+1jlSx8LAOu5Yg==
+gulp-alioss-upload@^1.0.3:
+  version "1.0.3"
+  resolved "https://registry.yarnpkg.com/gulp-alioss-upload/-/gulp-alioss-upload-1.0.3.tgz#cab372f98c6d2a8aad0a7b4b4807c032c518b32e"
+  integrity sha512-PGzPNEbS0dX9tU6wq4lINJgfjvYDxGi/IpimXULJbuOSDZY0ubJigcW7gEi25KPTLccNbQFqdg3eJDMhXVu0cQ==
   dependencies:
     ali-oss "^6.0.1"
     ansi-colors "^3.2.1"
